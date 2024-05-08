@@ -6,7 +6,7 @@ function App() {
     const [features, setFeatures] = useState([])
     useEffect(() => {
         const getdata = async () => {
-            const req = await fetch("https://localhost")
+            const req = await fetch("https://poc.portfoliofpaumier.ovh")
             const res = await req.json()
             setFeatures(res)
         }

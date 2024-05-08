@@ -7,12 +7,12 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   base: '/react-openlayers-pwa/',
   plugins: [
-    react(), 
-    eslint({ 
-      failOnWarning: false, 
-      failOnError: false 
+    react(),
+    eslint({
+      failOnWarning: false,
+      failOnError: false
     }),
-    VitePWA({ 
+    VitePWA({
       registerType: 'autoUpdate', // default is 'prompt'
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,gif,pdf}']

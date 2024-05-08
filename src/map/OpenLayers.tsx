@@ -125,7 +125,7 @@ export function OpenLayers({ features }: MapProps) {
             // @ts-ignore
             const geometry = e.feature.getGeometry().flatCoordinates;
             console.log(geometry)
-            const req = await fetch("https://localhost/point", {
+            const req = await fetch("https://poc.portfoliofpaumier.ovh/point", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
