@@ -210,6 +210,24 @@ export function OpenLayers({ features }: MapProps) {
 
     return (
         <div style={{width: "100%", height: "100%"}}>
+            <img src="https://risknat.org/wp-content/uploads/2024/02/Logo-REGALT-1.png"
+                style={{
+                    position: "absolute",
+                    top: "0",
+                    right: "0",
+                    width: "100px",
+                    height: "100px",
+                    zIndex: 9999
+                }} />
+            <a style={{
+                position: "absolute",
+                bottom: "0",
+                left: "0",
+                zIndex: 9999,
+                backgroundColor: "white",
+                padding: "1rem"
+            }}
+                href="javascript:location.reload()">Refresh this page</a>
             <div ref={mapRef} style={{height: "100%", width: "100%"}}>
             </div>
             <div id="info" style={{position: "absolute", top: "0", "left": 0}}>
