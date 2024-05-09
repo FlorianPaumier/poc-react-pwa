@@ -230,12 +230,13 @@ export function OpenLayers({ features }: MapProps) {
                 href="javascript:location.reload()">Refresh this page</a>
             <input style={{
                 position: "absolute",
-                bottom: "0",
-                left: "5rem",
+                bottom: "5rem",
+                left: "0",
                 zIndex: 9999,
                 backgroundColor: "white",
                 padding: "1rem"
             }}
+                type="file"
             accept="image/*" capture={"environment"} />
 
             <div ref={mapRef} style={{height: "100%", width: "100%"}}>
