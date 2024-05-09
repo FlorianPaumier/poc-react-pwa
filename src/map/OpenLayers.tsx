@@ -236,7 +236,7 @@ export function OpenLayers({ features }: MapProps) {
                 backgroundColor: "white",
                 padding: "1rem"
             }}
-            accept="image/*" capture={"environment"}>Photo</input>
+            accept="image/*" capture={"environment"} />
 
             <div ref={mapRef} style={{height: "100%", width: "100%"}}>
             </div>
